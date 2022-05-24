@@ -10,7 +10,7 @@ import { useState } from "react"
 
 export default function App() {
     //par défault, le menu est fermé:
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
     return (
         <div className="app">
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
