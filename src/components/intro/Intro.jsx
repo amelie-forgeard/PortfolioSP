@@ -24,11 +24,7 @@ export default function Intro() {
                     <h2>Bienvenue ! Je m'appelle</h2>
                     <h1>Amélie FORGEARD</h1>
                     <h3>Je suis <span ref={textRef}></span></h3>
-
                 </div>
-                <a href="#portfolio">
-                    <img src="assets/down.png" alt="" />
-                </a>
             </div>
         </div>
     )

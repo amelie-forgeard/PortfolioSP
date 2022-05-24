@@ -3,7 +3,7 @@ import Contact from "./components/contact/Contact"
 import Intro from "./components/intro/Intro"
 import Portfolio from "./components/portfolio/Portfolio"
 import Topbar from "./components/topbar/Topbar"
-import Works from "./components/works/Works"
+import Skills from "./components/skills/Skills"
 
 import "./app.scss"
 import { useState } from "react"
@@ -19,7 +19,7 @@ export default function App() {
             <div className="sections">
                 <Intro />
                 <Portfolio />
-                <Works />
+                <Skills />
                 <Contact />
             </div>
         </div>
