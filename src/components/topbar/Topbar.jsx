@@ -16,7 +16,6 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                         <LocalPhoneIcon className="icon" />
                         <span>+33 6 66 86 41 97</span>
                     </div>
-
                 </div>
                 <div className="right">
                     {/* au clic sur le menu burger, je veux l'inverse du booléen */}
