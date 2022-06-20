@@ -10,6 +10,7 @@ import redux from '../assets/icons_skills/redux.svg';
 import sass from '../assets/icons_skills/sass.svg';
 import vsc from '../assets/icons_skills/vsc.svg';
 import wp from '../assets/icons_skills/wp.svg';
+import mui from '../assets/icons_skills/mui.svg';
 
 const dataSkills = [
     {
@@ -34,6 +35,10 @@ const dataSkills = [
     {
         icon: sass,
         title: 'SASS',
+    },
+    {
+        icon: mui,
+        title: 'Material UI',
     },
     {
         icon: html,

@@ -2,29 +2,33 @@
 @use "../../style/mixins";
 
 .skills {
-  background-color: lightblue;
+  background-color: vars.$thirdColor;
   color: vars.$secondaryColor;
+  min-height: 600px;
   //   display: flex;
   //   flex-direction: column;
   &-title {
     display: flex;
     justify-content: center;
     margin: 2rem auto;
-    color: black;
+    color: vars.$mainColor;
   }
   &-subtitle {
-    color: blue;
+    color: vars.$mainColor;
     margin: 0 0 2rem 2rem;
   }
   &-list {
+    margin: auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    @media screen and (min-width: 1440px) {
-      width: 60%;
-    }
-    @media screen and (min-width: 1024px) {
-      width: 70%;
-    }
+    width: 80%;
+    // @media screen and (min-width: 1440px) {
+    //   width: 60%;
+    // }
+    // @media screen and (min-width: 1024px) {
+    //   width: 70%;
+    // }
 
     &-skill {
       width: 7em;
