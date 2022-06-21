@@ -23,18 +23,18 @@ export default function Contact() {
                 <div className="right">
                     <h2 className="right-title">Suivez-moi</h2>
                     <div className="right-links">
-                        <button><a href="mailto:amelieforgeard@gmail.com">M'envoyer un mail </a></button>
+                    </div>
+                    <div className="right-content">
+                        <p><img src={mail} alt="mail icon" /> Email: <a href="mailto:amelieforgeard@gmail.com">amelieforgeard@gmail.com</a></p>
+                        <p><img src={gitHub} alt="github icon" /> Github: <a href="https://github.com/amelie-forgeard">@amelie-forgeard</a></p>
+                        <p><img src={linkedIn} alt="linkedIn ico" /> Linkedin: <a href="https://www.linkedin.com/in/amelie-forgeard-17000lr/">Amélie FORGEARD</a></p>
+                        <p><img src={phone} alt="phone icon" /> Téléphone: 06.66.86.41.97</p>
                         <button
                             type="button"
                         // onClick={toggleModal}
                         >
-                            CV </button>
-                    </div>
-                    <div className="right-content">
-                        <p><img src={mail} alt="icone mail" /> mail: <a href="mailto:juliebeziat.m@gmail.com">juliebeziat.m@gmail.com</a></p>
-                        <p><img src={gitHub} alt="icone mail" /> github: <a href="https://github.com/juliebeZiat">@julie-beziat</a></p>
-                        <p><img src={linkedIn} alt="icone mail" /> linkedin: <a href="https://www.linkedin.com/in/julie-beziat/">julie-beziat</a></p>
-                        <p><img src={phone} alt="icone mail" /> téléphone: 06.66.64.42.50</p>
+                            Consulter mon CV </button>
+
                     </div>
                 </div>
             </div>

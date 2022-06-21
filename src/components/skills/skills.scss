@@ -3,17 +3,17 @@
 
 .skills {
   background-color: vars.$thirdColor;
-  color: vars.$secondaryColor;
+  color: vars.$mainColor;
   min-height: 600px;
   padding-top: 4em;
   padding-bottom: 3rem;
   &-title {
     display: flex;
     justify-content: center;
-    color: vars.$mainColor;
+    @include mixins.titleH1;
   }
   &-subtitle {
-    color: vars.$mainColor;
+    @include mixins.titleH2;
     margin: 0 0 2rem 2rem;
   }
   &-list {

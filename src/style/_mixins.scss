@@ -1,11 +1,21 @@
 @use "./vars";
 
+@mixin titleH1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+@mixin titleH2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+}
 @mixin buttonLink {
   display: block;
   width: fit-content;
   color: vars.$lightColor;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 0.8em;
   border-radius: 0.1em;
   margin-bottom: 1em;

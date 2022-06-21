@@ -1,25 +1,6 @@
 @use "../../style/vars";
 @use "../../style/mixins";
 
-// .contact {
-//   height: 100vh;
-//   background-color: vars.$secondaryColor;
-//   color: vars.$mainColor;
-//   min-height: 600px;
-//   padding-top: 4em;
-//   padding-bottom: 3rem;
-//   &-title {
-//     display: flex;
-//     justify-content: center;
-//     // margin: 2rem auto;
-//     color: vars.$mainColor;
-//   }
-//   &-subtitle {
-//     color: vars.$mainColor;
-//     margin: 0 0 2rem 2rem;
-//   }
-// }
-
 .contact {
   //   height: 100vh;
   background-color: vars.$fourthColor;
@@ -28,12 +9,10 @@
   padding-top: 4rem;
 
   &-title {
+    @include mixins.titleH1;
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
-    color: vars.$mainColor;
   }
-
   &-container {
     padding: 4rem;
     @media screen and (min-width: 1024px) {
@@ -50,8 +29,8 @@
       margin-bottom: 3em;
     }
     &-title {
+      @include mixins.titleH2;
       margin-bottom: 1rem;
-      font-size: 1.2em;
     }
 
     p {
@@ -65,35 +44,13 @@
     &-title {
       margin-bottom: 1rem;
       font-size: 1.2rem;
+      @include mixins.titleH2;
     }
 
     &-links {
       display: flex;
       @media screen and (max-width: 320px) {
         font-size: 0.9em;
-      }
-      a {
-        @include mixins.buttonLink;
-      }
-      button {
-        font-family: source-code-pro, "Courier New", monospace;
-        background-color: darken($color: vars.$secondaryColor, $amount: 20%);
-        padding: 0.8em;
-        border-radius: 0.1em;
-        color: vars.$lightColor;
-        cursor: pointer;
-        height: min-content;
-
-        &:hover {
-          background-color: vars.$secondaryColor;
-          transition: 0.3s;
-        }
-
-        img {
-          filter: invert(100%);
-          transform: rotate(180deg);
-          width: 10px;
-        }
       }
     }
 
@@ -104,10 +61,25 @@
       background-color: vars.$hoverColor;
       padding: 1em;
       border-radius: 0.1em;
+      button {
+        @include mixins.buttonLink;
+        margin: 2rem auto;
+        // background-color: darken($color: vars.$secondaryColor, $amount: 20%);
+        // padding: 0.8em;
+        // border-radius: 0.1em;
+        // color: vars.$lightColor;
+        // cursor: pointer;
+        // // height: min-content;
+
+        &:hover {
+          background-color: vars.$secondaryColor;
+          transition: 0.3s;
+        }
+      }
 
       p {
-        font-size: 0.8em;
         margin-bottom: 0.5em;
+        margin-left: 1rem;
         color: darken($color: vars.$lightColor, $amount: 40);
         img {
           filter: invert(100%);
