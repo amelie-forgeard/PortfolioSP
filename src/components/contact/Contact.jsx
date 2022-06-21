@@ -1,5 +1,3 @@
-// import { useState } from 'react';
-
 import gitHub from '../../assets/icons_skills/github.svg';
 import linkedIn from '../../assets/icons_skills/linkedin.svg';
 import mail from '../../assets/icons_skills/mail.svg';
@@ -29,16 +27,10 @@ export default function Contact() {
                         <p><img src={gitHub} alt="github icon" /> Github: <a href="https://github.com/amelie-forgeard">@amelie-forgeard</a></p>
                         <p><img src={linkedIn} alt="linkedIn ico" /> Linkedin: <a href="https://www.linkedin.com/in/amelie-forgeard-17000lr/">Amélie FORGEARD</a></p>
                         <p><img src={phone} alt="phone icon" /> Téléphone: 06.66.86.41.97</p>
-                        <button
-                            type="button"
-                        // onClick={toggleModal}
-                        >
-                            Consulter mon CV </button>
-
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

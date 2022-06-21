@@ -6,6 +6,7 @@ import Portfolio from "./components/portfolio/Portfolio"
 import Topbar from "./components/topbar/Topbar"
 import Skills from "./components/skills/Skills"
 import Menu from "./components/menu/Menu"
+import Form from "./components/form/Form"
 
 import "./App.scss"
 
@@ -21,6 +22,7 @@ export default function App() {
                 <Skills />
                 <Portfolio />
                 <Contact />
+                <Form />
             </div>
         </div>
     )
