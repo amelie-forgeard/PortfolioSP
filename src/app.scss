@@ -1,26 +1,27 @@
-.app{
-    height: 100vh;
+.app {
+  height: 100vh;
 
-    .sections{
-        width: 100%;
-        height: calc(100vh - 70px);
-        background-color: lightsalmon;
-        position: relative;
-        top: 70px;
-        //scroll + doux:
-        scroll-behavior: smooth;
-        // pour scroller de section en section :
-        scroll-snap-type: y mandatory;
-        //pour masquer la scrollbar sur differents OS
-        scrollbar-width: none; //for firefox
-        &::-webkit-scrollbar{
-            display: none;
-        }
-            // Pour chq composant inclus dans la scetion, ce css s'applique:
-        > *{
-            width: 100vw;
-            height: calc(100vh - 70px);
-            scroll-snap-align: start;
-        }
+  .sections {
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-color: white;
+    position: relative;
+    top: 100px;
+    //scroll + doux:
+    scroll-behavior: smooth;
+    // pour scroller de section en section :
+    scroll-snap-type: y mandatory;
+    //pour masquer la scrollbar sur differents OS
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar {
+      display: none;
     }
+    // Pour chq composant inclus dans la scetion, ce css s'applique:
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start;
+    }
+  }
 }
+

@@ -1,10 +1,11 @@
-@import "../../global.scss";
+@use "../../style/vars";
+@use "../../style/mixins";
 
 .topbar {
   width: 100%;
   height: 70px;
   background-color: white;
-  color: $mainColor;
+  color: vars.$mainColor;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -33,9 +34,9 @@
         align-items: center;
         margin-left: 30px;
 
-        @include mobile {
-          display: none;
-        }
+        // @include mobile {
+        //   display: none;
+        // }
 
         .icon {
           font-size: 18px;
@@ -65,7 +66,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $mainColor;
+          background-color: vars.$mainColor;
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -74,7 +75,7 @@
   }
 
   &.active {
-    background-color: $mainColor;
+    background-color: vars.$mainColor;
     color: white;
 
     .hamburger {

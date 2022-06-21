@@ -1,13 +1,13 @@
-// import { Menu } from "@material-ui/core"
+import { useState } from "react"
+
 import Contact from "./components/contact/Contact"
 import Intro from "./components/intro/Intro"
 import Portfolio from "./components/portfolio/Portfolio"
 import Topbar from "./components/topbar/Topbar"
 import Skills from "./components/skills/Skills"
-
-import "./app.scss"
-import { useState } from "react"
 import Menu from "./components/menu/Menu"
+
+import "./App.scss"
 
 export default function App() {
     //par défault, le menu est fermé:

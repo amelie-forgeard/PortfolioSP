@@ -1,9 +1,10 @@
-@import "../../global.scss";
+@use "../../style/vars";
+@use "../../style/mixins";
 
 .menu {
   width: 300px;
   height: 100vh;
-  background-color: $mainColor;
+  background-color: vars.$mainColor;
   position: fixed;
   top: 0;
   right: -300px;
