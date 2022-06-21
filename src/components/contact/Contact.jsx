@@ -18,13 +18,12 @@ export default function Contact() {
                     <p>J’ai effectué une formation de 6 mois avec l’école O’CLOCK de « Développeur Web & Web Mobile Fullstack JavaScript » avec une spécialisation REACT. </p>
                     <p>Désireuse de poursuivre mon évolution professionnelle, je suis à la recherche d'une première expérience afin de mettre en application les acquis de la formation, et poursuivre ma montée en compétences dans le développement web.</p>
                     <p>En attendant de décrocher mon premier poste, je continue à me former en autodidacte.</p>
-
                 </div>
 
                 <div className="right">
                     <h2 className="right-title">Suivez-moi</h2>
                     <div className="right-links">
-                        <a href="mailto:juliebeziat.m@gmail.com">M'envoyer un mail </a>
+                        <button><a href="mailto:amelieforgeard@gmail.com">M'envoyer un mail </a></button>
                         <button
                             type="button"
                         // onClick={toggleModal}
