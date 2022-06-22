@@ -1,3 +1,47 @@
+@use "../../style/vars";
+@use "../../style/mixins";
+
 .portfolio {
   background-color: #9ac6c5;
+  display: flex;
+  .left {
+    flex: 0.5;
+    .imgContainer {
+      width: 600px;
+      height: 330px;
+      background-color: #454a67;
+      border-radius: 5%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+      margin-top: 2rem;
+    }
+  }
+  .right {
+    flex: 0.5;
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      //   font-size: 60px;
+      margin: 10px 0;
+    }
+    h2 {
+      //   font-size: 35px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    span {
+      font-size: inherit;
+      color: vars.$mainColor;
+    }
+  }
 }
