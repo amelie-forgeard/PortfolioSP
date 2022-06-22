@@ -14,7 +14,7 @@
   }
   &-subtitle {
     @include mixins.titleH2;
-    margin: 0 0 2rem 2rem;
+    padding-left: 4rem;
   }
   &-list {
     margin: auto;

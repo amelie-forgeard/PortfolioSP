@@ -10,7 +10,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
                     <a href="#intro" className="logo"> AF. </a>
                     <div className="itemContainer">
                         <MailOutlineIcon className="icon" />
-                        <span>amelieforgeard@gmail.com</span>
+                        <p ><a className="itemContainer-mail" href="mailto:amelieforgeard@gmail.com">amelieforgeard@gmail.com</a></p>
                     </div>
                     <div className="itemContainer">
                         <LocalPhoneIcon className="icon" />

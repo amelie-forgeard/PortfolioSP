@@ -3,7 +3,7 @@ import "./form.scss";
 export default function Form() {
     return (
         <div className="form">
-            <h2>Formulaire de contact</h2>
+            <h2 className="form-title">Formulaire de contact</h2>
             <form className="form-fields"
                 name="contact"
                 method="post"

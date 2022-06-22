@@ -44,6 +44,13 @@
           margin-right: 5px;
         }
 
+        &-mail {
+          color: vars.$mainColor;
+          text-decoration: none;
+          font-size: 15px;
+          font-weight: 500;
+        }
+
         span {
           font-size: 15px;
           font-weight: 500;
