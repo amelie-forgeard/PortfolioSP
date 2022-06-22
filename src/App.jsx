@@ -8,7 +8,7 @@ import Skills from "./components/skills/Skills"
 import Menu from "./components/menu/Menu"
 import Form from "./components/form/Form"
 
-import "./App.scss"
+import "./app.scss"
 
 export default function App() {
     //par défault, le menu est fermé:
