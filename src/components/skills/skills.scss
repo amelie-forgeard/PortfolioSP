@@ -4,13 +4,15 @@
 .skills {
   background-color: vars.$thirdColor;
   color: vars.$mainColor;
-  min-height: 600px;
-  padding-top: 4em;
-  padding-bottom: 3rem;
+  overflow-y: hidden;
+  height: calc(100vh - 70px);
+  //   padding-top: 4em;
+  //   padding-bottom: 3rem;
   &-title {
     display: flex;
     justify-content: center;
     @include mixins.titleH1;
+    padding-top: 4rem;
   }
   &-subtitle {
     @include mixins.titleH2;
