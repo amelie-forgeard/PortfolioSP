@@ -13,10 +13,10 @@ export default function Form() {
                 {/* Ajout du champ caché pour Netlify: */}
                 <input type="hidden" name="form-name" value="contact" />
                 <label for="name" >
-                    <input type="text" name="name" placeholder="Nom" />
+                    <input type="text" name="name" placeholder="Nom" required />
                 </label>
                 <label for="email">
-                    <input type="email" name="email" placeholder="Email" />
+                    <input type="email" name="email" placeholder="Email" required />
                 </label>
                 <label for="message"></label>
                 <textarea className="textarea" name="message" placeholder="Rédigez votre message">

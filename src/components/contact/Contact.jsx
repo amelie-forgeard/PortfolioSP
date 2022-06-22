@@ -26,7 +26,7 @@ export default function Contact() {
                         <p><img src={mail} alt="mail icon" /> Email: <a href="mailto:amelieforgeard@gmail.com">amelieforgeard@gmail.com</a></p>
                         <p><img src={gitHub} alt="github icon" /> Github: <a href="https://github.com/amelie-forgeard">@amelie-forgeard</a></p>
                         <p><img src={linkedIn} alt="linkedIn ico" /> Linkedin: <a href="https://www.linkedin.com/in/amelie-forgeard-17000lr/">Amélie FORGEARD</a></p>
-                        <p><img src={phone} alt="phone icon" /> Téléphone: 06.66.86.41.97</p>
+                        <p><img src={phone} alt="phone icon" /> Téléphone: <span>06.66.86.41.97</span></p>
                     </div>
                 </div>
             </div>

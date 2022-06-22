@@ -59,17 +59,11 @@
         width: fit-content;
       }
       background-color: vars.$hoverColor;
-      padding: 1em;
+      padding: 0.5em;
       border-radius: 0.1em;
       button {
         @include mixins.buttonLink;
         margin: 2rem auto;
-        // background-color: darken($color: vars.$secondaryColor, $amount: 20%);
-        // padding: 0.8em;
-        // border-radius: 0.1em;
-        // color: vars.$lightColor;
-        // cursor: pointer;
-        // // height: min-content;
 
         &:hover {
           background-color: vars.$secondaryColor;
@@ -87,11 +81,13 @@
           margin-right: 0.3em;
         }
         a {
-          color: vars.$lightColor;
+          color: vars.$mainColor;
+          font-weight: 500;
           text-decoration: none;
         }
         span {
-          color: vars.$lightColor;
+          color: vars.$mainColor;
+          font-weight: 500;
         }
       }
     }
