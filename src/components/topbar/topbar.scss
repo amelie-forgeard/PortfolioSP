@@ -18,6 +18,11 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (min-width: 390px) and (max-width: 740px) {
+      padding: 0;
+      margin: 1rem;
+    }
+
     .left {
       display: flex;
       align-items: center;
@@ -28,6 +33,9 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        @media screen and (min-width: 390px) and (max-width: 740px) {
+          margin: 0;
+        }
       }
 
       .itemContainer {
@@ -35,9 +43,9 @@
         align-items: center;
         margin-left: 30px;
 
-        // @include mobile {
-        //   display: none;
-        // }
+        @media screen and (min-width: 390px) and (max-width: 740px) {
+          display: none;
+        }
 
         .icon {
           font-size: 18px;
