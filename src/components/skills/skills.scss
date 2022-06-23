@@ -6,6 +6,7 @@
   color: vars.$mainColor;
   overflow-y: hidden;
   height: calc(100vh - 70px);
+
   &-title {
     display: flex;
     justify-content: center;
@@ -15,6 +16,11 @@
   &-subtitle {
     @include mixins.titleH2;
     padding-left: 4rem;
+    @media screen and (min-width: 390px) and (max-width: 740px) {
+      text-align: center;
+      padding: 0;
+      font-size: 20px;
+    }
   }
   &-list {
     margin: auto;
@@ -22,6 +28,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
+
     // @media screen and (min-width: 1440px) {
     //   width: 60%;
     // }
@@ -31,9 +38,6 @@
 
     &-skill {
       width: 7em;
-      @media screen and (max-width: 320px) {
-        width: 5em;
-      }
       background-color: vars.$hoverColor;
       margin: 3em 3em 1em 0;
       min-height: 7em;
@@ -44,6 +48,11 @@
       border-radius: 0.5em;
       font-size: 0.8em;
       text-align: center;
+
+      @media screen and (min-width: 390px) and (max-width: 740px) {
+        margin: 1rem;
+      }
+
       &:hover {
         transition: 0.8s;
         box-shadow: 0px 0px 20px 2px rgba(255, 255, 255, 0.4);
@@ -54,16 +63,6 @@
         width: 40px;
         height: 40px;
       }
-    }
-  }
-}
-
-// Light mode style
-#light-mode {
-  .skills-list-skill {
-    &:hover {
-      transition: 0.8s;
-      box-shadow: 0px 0px 20px 2px rgba(107, 107, 107, 0.4);
     }
   }
 }
