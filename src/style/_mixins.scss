@@ -46,3 +46,10 @@
     }
   }
 }
+
+// Gestion du responsive
+@mixin mobile {
+  @media (max-width: 740px) {
+    @content;
+  }
+}
