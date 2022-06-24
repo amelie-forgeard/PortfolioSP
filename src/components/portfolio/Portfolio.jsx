@@ -1,7 +1,6 @@
 import "./portfolio.scss";
 
 import Apotheose from "../../assets/screenshots/capture.png"
-import LogoReact from "../../assets/icons_skills/react.svg"
 
 export default function Portfolio() {
     return (
