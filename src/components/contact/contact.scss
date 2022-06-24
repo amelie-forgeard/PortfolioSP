@@ -4,8 +4,14 @@
 .contact {
   background-color: vars.$fourthColor;
   color: vars.$mainColor;
-  max-height: 500px;
+  //   max-height: 500px;
   padding-top: 4rem;
+  @media screen and (min-width: 390px) and (max-width: 740px) {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 
   &-title {
     @include mixins.titleH1;
@@ -14,19 +20,12 @@
   }
   &-container {
     padding: 4rem;
-    @media screen and (min-width: 1024px) {
-      display: flex;
+    @media screen and (min-width: 390px) and (max-width: 740px) {
+      padding: 0.5rem;
     }
   }
 
   .left {
-    @media screen and (min-width: 1024px) {
-      width: 60%;
-      margin-right: 8em;
-    }
-    @media screen and (max-width: 1024px) {
-      margin-bottom: 3em;
-    }
     &-title {
       @include mixins.titleH2;
       margin-bottom: 1rem;
@@ -36,10 +35,14 @@
       font-weight: 300;
       line-height: 1.2rem;
       margin-bottom: 1rem;
+      @media screen and (min-width: 390px) and (max-width: 740px) {
+        font-size: 0.9rem;
+      }
     }
   }
 
   .right {
+    padding-top: 2rem;
     &-title {
       margin-bottom: 1rem;
       font-size: 1.2rem;
@@ -57,7 +60,6 @@
       @media screen and (max-width: 1024px) {
         width: fit-content;
       }
-      background-color: vars.$hoverColor;
       padding: 0.5em;
       border-radius: 0.1em;
       button {
